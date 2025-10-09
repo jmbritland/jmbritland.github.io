@@ -60,63 +60,83 @@
         Additionally, locations within the UUHC system will be re-classified in
         MedHub as one of the sites below:
       </p>
-      <ul>
-        <li>ARUP</li>
-        <li>ARUP - Lab Research</li>
-        <li>
-          <details id="test-details">
-            <summary>
-              University Community Clinics
-              <span class="false-link"
-                >(expand/collapse list of child sites)</span
-              >
-            </summary>
-            <em>Use UCC for the following sites:</em>
-            <ul>
-              <li>Assessment & Referral Svcs</li>
-              <li>Centerville Clinic (UUHC)</li>
-              <li>Elko Specialty Clinic (UUHC)</li>
-              <li>Farmington Health Ctr (UUHC)</li>
-              <li>Greenwood Clinic (UUHC)</li>
-              <li>Huntsman Clinic at South Jordan Health Center</li>
-              <li>Madsen Clinic (UUHC)</li>
-              <li>Farmington Health Ctr (UUHC)</li>
-              <li>Pain Management Center</li>
-              <li>Parkway Clinic (Orem-UUHC)</li>
-              <li>Redstone Clinic (Park City / UUHC)</li>
-              <li>Redwood Clinic (UUHC)</li>
-              <li>RMCOEH (UUHC)</li>
-              <li>South Jordan / Daybreak (UUHC)</li>
-              <li>St. George Dental Clinic (UUHC)</li>
-              <li>Stansbury Clinic (Tooele / UUHC)</li>
-              <li>Sugar House Health Center (UUHC)</li>
-              <li>The Population Health Center / Rose Park Dental (UUHC)</li>
-              <li>University of Utah School of Dentistry</li>
-              <li>UofU Dept of Biomedical Informatics</li>
-              <li>UofU Sleep-Wake Center (UUHC)</li>
-              <li>Westridge Clinic (UUHC)</li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="undercover-button"
-            id="uuh-button"
-            data-bs-toggle="modal"
-            data-bs-target="#uuh-modal"
+      <div class="accordion" id="Accordion">
+        <div class="accordion-item" id="item-ARUP">
+          <h2 class="accordion-header" id="heading-ARUP">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-ARUP"
+              aria-expanded="false"
+              aria-controls="collapse-ARUP"
+            >
+              ARUP
+            </button>
+          </h2>
+          <div
+            id="collapse-ARUP"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-ARUP"
+            data-bs-parent="#siteAccordion"
           >
-            University of Utah Hospital - UUH
-            <span class="false-link">(click to see list of child sites) </span>
-          </button>
-        </li>
-        <li title="Huntsman Cancer Hospital">
-          Huntsman Cancer Hospital (hover for list of child sites)
-        </li>
-      </ul>
-
-      <div class="accordion" id="siteAccordion">
-        <div class="accordion-item">
+            <div class="accordion-body">
+              <em>The ARUP site will remain unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-ARUPlab">
+          <h2 class="accordion-header" id="heading-ARUPlab">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-ARUPlab"
+              aria-expanded="false"
+              aria-controls="collapse-ARUPlab"
+            >
+              ARUP Laboratory Research
+            </button>
+          </h2>
+          <div
+            id="collapse-ARUPlab"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-ARUPlab"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em>The ARUP Laboratory Research site will remain unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-hch">
+          <h2 class="accordion-header" id="heading-hch">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-hch"
+              aria-expanded="false"
+              aria-controls="collapse-hch"
+            >
+              HCH / HCI Clinical
+            </button>
+          </h2>
+          <div
+            id="collapse-hch"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-hch"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em
+                >The Huntsman Cancer Hospital site will be renamed to HCH / HCI
+                Clinical.</em
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-hchlab">
           <h2 class="accordion-header" id="heading-hchlab">
             <button
               class="accordion-button collapsed"
@@ -126,61 +146,269 @@
               aria-expanded="false"
               aria-controls="collapse-hchlab"
             >
-              Hunstman Cancer Hospital Laboratory Research
+              Huntsman Cancer Hospital Laboratory Research
             </button>
           </h2>
           <div
-            id="collapseUCC"
+            id="collapse-hchlab"
             class="accordion-collapse collapse"
             aria-labelledby="heading-hchlab"
             data-bs-parent="#siteAccordion"
           >
             <div class="accordion-body">
               <ul>
-                <li>Hunstman Cancer Hospital Laboratory Research</li>
-                <li>
-                  The Hunstman Cancer Institute (Research) site will be
-                  deprecated
-                </li>
+                <li>Huntsman Cancer Hospital Laboratory Research</li>
+                <li>Huntsman Cancer Institute (Research)</li>
               </ul>
               <em
-                >Use this site if the trainee is located at one of these
-                locations.</em
+                >These sites will be consolidated under the Huntsman Cancer
+                Hospital Laboratory Research site, which will be renamed to HCH
+                / HCI Lab Research.</em
               >
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="modal fade"
-        id="uuh-modal"
-        tabindex="-1"
-        aria-labelledby="uuh-label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="uuh-label">
-                University of Utah Hospital
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
+        <div class="accordion-item" id="item-hmh">
+          <h2 class="accordion-header" id="heading-hmh">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-hmh"
+              aria-expanded="false"
+              aria-controls="collapse-hmh"
+            >
+              Huntsman Mental Health Institute
+            </button>
+          </h2>
+          <div
+            id="collapse-hmh"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-hmh"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em
+                >The Huntsman Mental Health Institute site will remain
+                unchanged.</em
               >
-                <span aria-hidden="true">Close</span>
-              </button>
             </div>
-            <div class="modal-body">
+          </div>
+        </div>
+        <div class="accordion-item" id="item-mor">
+          <h2 class="accordion-header" id="heading-mor">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-mor"
+              aria-expanded="false"
+              aria-controls="collapse-mor"
+            >
+              John A. Moran Eye Center
+            </button>
+          </h2>
+          <div
+            id="collapse-mor"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-mor"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em>The John A. Moran Eye Center site will remain unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-nrhip">
+          <h2 class="accordion-header" id="heading-nrhip">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-nrhip"
+              aria-expanded="false"
+              aria-controls="collapse-nrhip"
+            >
+              NRH Inpatient Rehab
+            </button>
+          </h2>
+          <div
+            id="collapse-nrhip"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-nrhip"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em>The NRH Inpatient Rehab site will remain unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-ucc">
+          <h2 class="accordion-header" id="heading-ucc">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-ucc"
+              aria-expanded="false"
+              aria-controls="collapse-ucc"
+            >
+              University Community Clinics
+            </button>
+          </h2>
+          <div
+            id="collapse-ucc"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-ucc"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
               <ul>
-                <li>Clinical Neurosciences Center</li>
-                <li>University of Utah Hospital</li>
-                <li>Utah AirMed</li>
-                <li>Utah Diabetes Center</li>
+                <li>Assessment & Referral Svcs</li>
+                <li>Centerville Clinic (UUHC)</li>
+                <li>Elko Specialty Clinic (UUHC)</li>
+                <li>Farmington Health Ctr (UUHC)</li>
+                <li>Greenwood Clinic (UUHC)</li>
+                <li>Huntsman Clinic at South Jordan Health Center</li>
+                <li>Madsen Clinic (UUHC)</li>
+                <li>Farmington Health Ctr (UUHC)</li>
+                <li>Pain Management Center</li>
+                <li>Parkway Clinic (Orem-UUHC)</li>
+                <li>Redstone Clinic (Park City / UUHC)</li>
+                <li>Redwood Clinic (UUHC)</li>
+                <li>RMCOEH (UUHC)</li>
+                <li>South Jordan / Daybreak (UUHC)</li>
+                <li>St. George Dental Clinic (UUHC)</li>
+                <li>Stansbury Clinic (Tooele / UUHC)</li>
+                <li>Sugar House Health Center (UUHC)</li>
+                <li>Sugarhouse Clinic (UUHC)</li>
+                <li>The Population Health Center / Rose Park Dental (UUHC)</li>
+                <li>University of Utah School of Dentistry</li>
+                <li>UofU Dept of Biomedical Informatics</li>
+                <li>UofU Sleep-Wake Center (UUHC)</li>
+                <li>Westridge Clinic (UUHC)</li>
+              </ul>
+              <em
+                >These sites will be consolidated under the new University
+                Community Clinics site.</em
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-uuh">
+          <h2 class="accordion-header" id="heading-uuh">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-uuh"
+              aria-expanded="false"
+              aria-controls="collapse-uuh"
+            >
+              University of Utah Hospital
+            </button>
+          </h2>
+          <div
+            id="collapse-uuh"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-uuh"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Clinical Neurosciences Center (CNC)</li>
+                <li>University of Utah Hospitals & Clinics</li>
+                <li>Utah AirMed (UUHC)</li>
+                <li>Utah Diabetes Center (UUHC)</li>
                 <li>UUH - Imaging & Neurosciences Center</li>
               </ul>
+              <em
+                >These sites will be consolidated under the University of Utah
+                Hospitals and Clinics site, which will be renamed University of
+                Utah Hospital.</em
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-uuhlab">
+          <h2 class="accordion-header" id="heading-uuhlab">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-uuhlab"
+              aria-expanded="false"
+              aria-controls="collapse-uuhlab"
+            >
+              UUH - Laboratory Research- UUHLab
+            </button>
+          </h2>
+          <div
+            id="collapse-uuhlab"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-uuhlab"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em>The UUH Laboratory Research site will remain unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-hmhip">
+          <h2 class="accordion-header" id="heading-hmhip">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-hmhip"
+              aria-expanded="false"
+              aria-controls="collapse-hmhip"
+            >
+              UUHC Inpatient Psych - 5 West
+            </button>
+          </h2>
+          <div
+            id="collapse-hmhip"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-hmhip"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <em
+                >The UUHC Inpatient Psych - 5 West site will remain
+                unchanged.</em
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="item-uoc">
+          <h2 class="accordion-header" id="heading-uoc">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-uoc"
+              aria-expanded="false"
+              aria-controls="collapse-uoc"
+            >
+              University Orthopaedic Center - UOC
+            </button>
+          </h2>
+          <div
+            id="collapse-uoc"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-uoc"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Snowbird Ski Clinic</li>
+                <li>University Orthopaedic Center</li>
+              </ul>
+              <em
+                >These sites will be consolidated under the University
+                Orthopaedic Center site.</em
+              >
             </div>
           </div>
         </div>
