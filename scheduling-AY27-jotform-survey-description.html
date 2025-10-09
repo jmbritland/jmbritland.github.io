@@ -17,29 +17,40 @@
   <body>
     <style>
       body {
-        --utah-red: #be0000;
         font-family: century-gothic, sans-serif;
+        max-width: 600px;
+        margin: 5px auto;
+        border: 1px solid black;
       }
       #frame-content {
         margin: 10px;
       }
-      summary::marker {
-        display: none;
-        visibility: hidden;
+
+      .accordion-button {
+        background-color: #be0000;
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        letter-spacing: 0.05em;
       }
-      summary {
-        list-style: none;
+
+      .accordion-button:not(.collapsed) {
+        background-color: #be0000;
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        letter-spacing: 0.05em;
       }
-      .false-link {
-        text-decoration: underline;
-        color: var(--utah-red, red);
+
+      .accordion-body {
+        background-color: #ffffff;
+        color: #333333;
+        padding: 12px;
       }
-      .undercover-button {
-        border: none;
-        margin: 0;
-        padding: 0;
-        background-color: inherit;
-        color: inherit;
+
+      .accordion-item {
+        border-color: #cccccc;
+        font-size: 11pt;
       }
     </style>
     <div id="frame-content">
@@ -49,6 +60,7 @@
         want to gather your feedback now to help guide our training presentation
         and ensure the transition addresses your needs and challenges.
       </p>
+      <p><b>About the AY27 site and scheduling changes:</b></p>
       <p>
         The Office of Graduate Medical Education (GME) is implementing a
         structural change within MedHub that requires all programs to define one
@@ -57,10 +69,10 @@
         multiple sites must be redefined effective Academic Year 2027 (AY27).
       </p>
       <p>
-        Additionally, locations within the UUHC system will be re-classified in
-        MedHub as one of the sites below:
+        Additionally, all locations within the UUHC system will be re-classified
+        in MedHub as one of the sites below:
       </p>
-      <div class="accordion" id="Accordion">
+      <div class="accordion" id="siteAccordion">
         <div class="accordion-item" id="item-ARUP">
           <h2 class="accordion-header" id="heading-ARUP">
             <button
@@ -146,7 +158,7 @@
               aria-expanded="false"
               aria-controls="collapse-hchlab"
             >
-              Huntsman Cancer Hospital Laboratory Research
+              HCH / HCI Lab Research
             </button>
           </h2>
           <div
@@ -156,15 +168,17 @@
             data-bs-parent="#siteAccordion"
           >
             <div class="accordion-body">
+              <p>
+                <em
+                  >These sites will be consolidated under the Huntsman Cancer
+                  Hospital Laboratory Research site, which will be renamed to
+                  HCH / HCI Lab Research:</em
+                >
+              </p>
               <ul>
-                <li>Huntsman Cancer Hospital Laboratory Research</li>
+                <li>HCH/HCI Lab Research</li>
                 <li>Huntsman Cancer Institute (Research)</li>
               </ul>
-              <em
-                >These sites will be consolidated under the Huntsman Cancer
-                Hospital Laboratory Research site, which will be renamed to HCH
-                / HCI Lab Research.</em
-              >
             </div>
           </div>
         </div>
@@ -263,6 +277,12 @@
             data-bs-parent="#siteAccordion"
           >
             <div class="accordion-body">
+              <p>
+                <em
+                  >These sites will be consolidated under the new University
+                  Community Clinics site:</em
+                >
+              </p>
               <ul>
                 <li>Assessment & Referral Svcs</li>
                 <li>Centerville Clinic (UUHC)</li>
@@ -288,10 +308,6 @@
                 <li>UofU Sleep-Wake Center (UUHC)</li>
                 <li>Westridge Clinic (UUHC)</li>
               </ul>
-              <em
-                >These sites will be consolidated under the new University
-                Community Clinics site.</em
-              >
             </div>
           </div>
         </div>
@@ -315,6 +331,13 @@
             data-bs-parent="#siteAccordion"
           >
             <div class="accordion-body">
+              <p>
+                <em
+                  >These sites will be consolidated under the University of Utah
+                  Hospitals and Clinics site, which will be renamed University
+                  of Utah Hospital:</em
+                >
+              </p>
               <ul>
                 <li>Clinical Neurosciences Center (CNC)</li>
                 <li>University of Utah Hospitals & Clinics</li>
@@ -322,11 +345,6 @@
                 <li>Utah Diabetes Center (UUHC)</li>
                 <li>UUH - Imaging & Neurosciences Center</li>
               </ul>
-              <em
-                >These sites will be consolidated under the University of Utah
-                Hospitals and Clinics site, which will be renamed University of
-                Utah Hospital.</em
-              >
             </div>
           </div>
         </div>
@@ -401,14 +419,16 @@
             data-bs-parent="#siteAccordion"
           >
             <div class="accordion-body">
+              <p>
+                <em
+                  >These sites will be consolidated under the University
+                  Orthopaedic Center site:</em
+                >
+              </p>
               <ul>
                 <li>Snowbird Ski Clinic</li>
                 <li>University Orthopaedic Center</li>
               </ul>
-              <em
-                >These sites will be consolidated under the University
-                Orthopaedic Center site.</em
-              >
             </div>
           </div>
         </div>
