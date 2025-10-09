@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>GME Content Landing Page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -13,29 +12,37 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
   </head>
   <body>
-    <div>
-      <style>
-        summary::marker {
-          display: none;
-          visibility: hidden;
-        }
-        summary {
-          list-style: none;
-        }
-        .false-link {
-          text-decoration: underline;
-          color: blue;
-        }
-        .undercover-button {
-          border: none;
-          margin: 0;
-          padding: 0;
-          background-color: inherit;
-          color: inherit;
-        }
-      </style>
+    <style>
+      body {
+        --utah-red: #be0000;
+        font-family: century-gothic, sans-serif;
+      }
+      #frame-content {
+        margin: 10px;
+      }
+      summary::marker {
+        display: none;
+        visibility: hidden;
+      }
+      summary {
+        list-style: none;
+      }
+      .false-link {
+        text-decoration: underline;
+        color: var(--utah-red, red);
+      }
+      .undercover-button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-color: inherit;
+        color: inherit;
+      }
+    </style>
+    <div id="frame-content">
       <p>
         At the <b>February 2026 GME Training Workshop</b>, the Office of GME
         will be presenting on new site and scheduling practices for AY27. We
@@ -91,7 +98,93 @@
             </ul>
           </details>
         </li>
+        <li>
+          <button
+            type="button"
+            class="undercover-button"
+            id="uuh-button"
+            data-bs-toggle="modal"
+            data-bs-target="#uuh-modal"
+          >
+            University of Utah Hospital - UUH
+            <span class="false-link">(click to see list of child sites) </span>
+          </button>
+        </li>
+        <li title="Huntsman Cancer Hospital">
+          Huntsman Cancer Hospital (hover for list of child sites)
+        </li>
       </ul>
+
+      <div class="accordion" id="siteAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-hchlab">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-hchlab"
+              aria-expanded="false"
+              aria-controls="collapse-hchlab"
+            >
+              Hunstman Cancer Hospital Laboratory Research
+            </button>
+          </h2>
+          <div
+            id="collapseUCC"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-hchlab"
+            data-bs-parent="#siteAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Hunstman Cancer Hospital Laboratory Research</li>
+                <li>
+                  The Hunstman Cancer Institute (Research) site will be
+                  deprecated
+                </li>
+              </ul>
+              <em
+                >Use this site if the trainee is located at one of these
+                locations.</em
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="uuh-modal"
+        tabindex="-1"
+        aria-labelledby="uuh-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uuh-label">
+                University of Utah Hospital
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">Close</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Clinical Neurosciences Center</li>
+                <li>University of Utah Hospital</li>
+                <li>Utah AirMed</li>
+                <li>Utah Diabetes Center</li>
+                <li>UUH - Imaging & Neurosciences Center</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
