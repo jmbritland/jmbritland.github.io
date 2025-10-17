@@ -51,9 +51,26 @@
         border-color: #cccccc;
         font-size: 11pt;
       }
+      h3,
+      h4 {
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 125%;
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 115%;
+      }
+      #accordion-container {
+        background-color: #e2e6e6;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #939598;
+      }
     </style>
     <div id="frame-content">
-      <p><b>About the AY27 site and scheduling changes:</b></p>
+      <h3>About the AY27 site and scheduling changes:</h3>
       <p>
         The Office of Graduate Medical Education (GME) is implementing a
         structural change within MedHub that requires all programs to define one
@@ -63,382 +80,397 @@
       </p>
       <p>
         Additionally, all internal locations within the UUHC system will be
-        re-classified in MedHub as one of the sites below:
+        re-classified in MedHub as one of the sites below.
       </p>
-      <div class="accordion" id="siteAccordion">
-        <div class="accordion-item" id="item-ARUP">
-          <h2 class="accordion-header" id="heading-ARUP">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-ARUP"
-              aria-expanded="false"
-              aria-controls="collapse-ARUP"
-            >
-              ARUP
-            </button>
-          </h2>
-          <div
-            id="collapse-ARUP"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-ARUP"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The ARUP site will remain unchanged. The ARUP site abbreviation
-                will remain as [ARUP].
-              </em>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-ARUPlab">
-          <h2 class="accordion-header" id="heading-ARUPlab">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-ARUPlab"
-              aria-expanded="false"
-              aria-controls="collapse-ARUPlab"
-            >
-              ARUP Laboratory Research
-            </button>
-          </h2>
-          <div
-            id="collapse-ARUPlab"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-ARUPlab"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The ARUP Laboratory Research site will remain unchanged. The
-                ARUP Laboratory Research site abbreviation will remain as
-                [ARUPLab].</em
+      <p>
+        These changes protect GME and program funding by ensuring compliance
+        with VA regulations and improving the accuracy of billing and cost
+        reporting. Standardized site definitions will also support more
+        consistent FTE data and align MedHub with UUHC’s funds flow structure,
+        helping ensure programs are accurately credited for their clinical
+        activity in internal funding decisions.
+      </p>
+      <div id="accordion-container">
+        <h4>AY27 Re-classified Internal UUHC Sites</h4>
+        <div class="accordion" id="siteAccordion">
+          <div class="accordion-item" id="item-ARUP">
+            <h2 class="accordion-header" id="heading-ARUP">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-ARUP"
+                aria-expanded="false"
+                aria-controls="collapse-ARUP"
               >
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-hch">
-          <h2 class="accordion-header" id="heading-hch">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-hch"
-              aria-expanded="false"
-              aria-controls="collapse-hch"
+                ARUP
+              </button>
+            </h2>
+            <div
+              id="collapse-ARUP"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-ARUP"
+              data-bs-parent="#siteAccordion"
             >
-              HCH / HCI Clinical
-            </button>
-          </h2>
-          <div
-            id="collapse-hch"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-hch"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The Huntsman Cancer Hospital site will be renamed to HCH / HCI
-                Clinical. The HCH / HCI Clinical site abbreviation will be
-                [HCH].</em
-              >
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-hchlab">
-          <h2 class="accordion-header" id="heading-hchlab">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-hchlab"
-              aria-expanded="false"
-              aria-controls="collapse-hchlab"
-            >
-              HCH / HCI Lab Research
-            </button>
-          </h2>
-          <div
-            id="collapse-hchlab"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-hchlab"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <p>
+              <div class="accordion-body">
                 <em
-                  >These sites will be consolidated under the Huntsman Cancer
-                  Hospital Laboratory Research site, which will be renamed to
-                  HCH / HCI Lab Research. The HCH / HCI Lab Research site
-                  abbreviation will be [HCHLab].</em
-                >
-              </p>
-              <ul>
-                <li>HCH/HCI Lab Research</li>
-                <li>Huntsman Cancer Institute (Research)</li>
-              </ul>
+                  >The ARUP site will remain unchanged. The ARUP site
+                  abbreviation will remain as [ARUP].
+                </em>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item" id="item-hmh">
-          <h2 class="accordion-header" id="heading-hmh">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-hmh"
-              aria-expanded="false"
-              aria-controls="collapse-hmh"
-            >
-              Huntsman Mental Health Institute
-            </button>
-          </h2>
-          <div
-            id="collapse-hmh"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-hmh"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The Huntsman Mental Health Institute site will remain
-                unchanged. The site abbreviation, however, will be changed to
-                [HMH].</em
+          <div class="accordion-item" id="item-ARUPlab">
+            <h2 class="accordion-header" id="heading-ARUPlab">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-ARUPlab"
+                aria-expanded="false"
+                aria-controls="collapse-ARUPlab"
               >
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-mor">
-          <h2 class="accordion-header" id="heading-mor">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-mor"
-              aria-expanded="false"
-              aria-controls="collapse-mor"
+                ARUP Laboratory Research
+              </button>
+            </h2>
+            <div
+              id="collapse-ARUPlab"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-ARUPlab"
+              data-bs-parent="#siteAccordion"
             >
-              John A. Moran Eye Center
-            </button>
-          </h2>
-          <div
-            id="collapse-mor"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-mor"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The John A. Moran Eye Center site will remain unchanged. The
-                site abbreviation, however, will be changed to [MOR].</em
-              >
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-nrhip">
-          <h2 class="accordion-header" id="heading-nrhip">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-nrhip"
-              aria-expanded="false"
-              aria-controls="collapse-nrhip"
-            >
-              NRH Inpatient Rehab
-            </button>
-          </h2>
-          <div
-            id="collapse-nrhip"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-nrhip"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The NRH Inpatient Rehab site will remain unchanged. The site
-                abbreviation, however, will be changed to [NRHIP].</em
-              >
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-ucc">
-          <h2 class="accordion-header" id="heading-ucc">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-ucc"
-              aria-expanded="false"
-              aria-controls="collapse-ucc"
-            >
-              University Community Clinics
-            </button>
-          </h2>
-          <div
-            id="collapse-ucc"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-ucc"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <p>
+              <div class="accordion-body">
                 <em
-                  >These sites will be consolidated under the new University
-                  Community Clinics site. The site abbreviation will be
-                  [UCC].</em
+                  >The ARUP Laboratory Research site will remain unchanged. The
+                  ARUP Laboratory Research site abbreviation will remain as
+                  [ARUPLab].</em
                 >
-              </p>
-              <ul>
-                <li>Assessment & Referral Svcs</li>
-                <li>Centerville Clinic (UUHC)</li>
-                <li>Elko Specialty Clinic (UUHC)</li>
-                <li>Farmington Health Ctr (UUHC)</li>
-                <li>Greenwood Clinic (UUHC)</li>
-                <li>Huntsman Clinic at South Jordan Health Center</li>
-                <li>Madsen Clinic (UUHC)</li>
-                <li>Farmington Health Ctr (UUHC)</li>
-                <li>Pain Management Center</li>
-                <li>Parkway Clinic (Orem-UUHC)</li>
-                <li>Redstone Clinic (Park City / UUHC)</li>
-                <li>Redwood Clinic (UUHC)</li>
-                <li>RMCOEH (UUHC)</li>
-                <li>South Jordan / Daybreak (UUHC)</li>
-                <li>St. George Dental Clinic (UUHC)</li>
-                <li>Stansbury Clinic (Tooele / UUHC)</li>
-                <li>Sugar House Health Center (UUHC)</li>
-                <li>Sugarhouse Clinic (UUHC)</li>
-                <li>The Population Health Center / Rose Park Dental (UUHC)</li>
-                <li>University of Utah School of Dentistry</li>
-                <li>UofU Dept of Biomedical Informatics</li>
-                <li>UofU Sleep-Wake Center (UUHC)</li>
-                <li>Westridge Clinic (UUHC)</li>
-              </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item" id="item-uuh">
-          <h2 class="accordion-header" id="heading-uuh">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-uuh"
-              aria-expanded="false"
-              aria-controls="collapse-uuh"
-            >
-              University of Utah Hospital
-            </button>
-          </h2>
-          <div
-            id="collapse-uuh"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-uuh"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <p>
-                <em
-                  >These sites will be consolidated under the University of Utah
-                  Hospitals and Clinics site, which will be renamed University
-                  of Utah Hospital. The site abbreviation will be [UUH].</em
-                >
-              </p>
-              <ul>
-                <li>Clinical Neurosciences Center (CNC)</li>
-                <li>University of Utah Hospitals & Clinics</li>
-                <li>Utah AirMed (UUHC)</li>
-                <li>Utah Diabetes Center (UUHC)</li>
-                <li>UUH - Imaging & Neurosciences Center</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-uuhlab">
-          <h2 class="accordion-header" id="heading-uuhlab">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-uuhlab"
-              aria-expanded="false"
-              aria-controls="collapse-uuhlab"
-            >
-              UUHC - Laboratory Research
-            </button>
-          </h2>
-          <div
-            id="collapse-uuhlab"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-uuhlab"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The UUHC - Laboratory Research site will remain unchanged. The
-                site abbreviation, however, will be changed to [UUHLab].
-              </em>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="item-hmhip">
-          <h2 class="accordion-header" id="heading-hmhip">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-hmhip"
-              aria-expanded="false"
-              aria-controls="collapse-hmhip"
-            >
-              UUHC Inpatient Psych - 5 West
-            </button>
-          </h2>
-          <div
-            id="collapse-hmhip"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-hmhip"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <em
-                >The UUHC Inpatient Psych - 5 West site will remain unchanged.
-                The site abbreviation, however, will be changed to [HMHIP].</em
+          <div class="accordion-item" id="item-hch">
+            <h2 class="accordion-header" id="heading-hch">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-hch"
+                aria-expanded="false"
+                aria-controls="collapse-hch"
               >
+                HCH / HCI Clinical
+              </button>
+            </h2>
+            <div
+              id="collapse-hch"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-hch"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <em
+                  >The Huntsman Cancer Hospital site will be renamed to HCH /
+                  HCI Clinical. The HCH / HCI Clinical site abbreviation will be
+                  [HCH].</em
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item" id="item-uoc">
-          <h2 class="accordion-header" id="heading-uoc">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-uoc"
-              aria-expanded="false"
-              aria-controls="collapse-uoc"
+          <div class="accordion-item" id="item-hchlab">
+            <h2 class="accordion-header" id="heading-hchlab">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-hchlab"
+                aria-expanded="false"
+                aria-controls="collapse-hchlab"
+              >
+                HCH / HCI Lab Research
+              </button>
+            </h2>
+            <div
+              id="collapse-hchlab"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-hchlab"
+              data-bs-parent="#siteAccordion"
             >
-              University Orthopaedic Center
-            </button>
-          </h2>
-          <div
-            id="collapse-uoc"
-            class="accordion-collapse collapse"
-            aria-labelledby="heading-uoc"
-            data-bs-parent="#siteAccordion"
-          >
-            <div class="accordion-body">
-              <p>
+              <div class="accordion-body">
+                <p>
+                  <em
+                    >These sites will be consolidated under the Huntsman Cancer
+                    Hospital Laboratory Research site, which will be renamed to
+                    HCH / HCI Lab Research. The HCH / HCI Lab Research site
+                    abbreviation will be [HCHLab].</em
+                  >
+                </p>
+                <ul>
+                  <li>HCH/HCI Lab Research</li>
+                  <li>Huntsman Cancer Institute (Research)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-hmh">
+            <h2 class="accordion-header" id="heading-hmh">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-hmh"
+                aria-expanded="false"
+                aria-controls="collapse-hmh"
+              >
+                Huntsman Mental Health Institute
+              </button>
+            </h2>
+            <div
+              id="collapse-hmh"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-hmh"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
                 <em
-                  >The University Orthopaedic Center site will remain unchanged.
-                  The University Orthopaedic Center site abbreviation will
-                  remain as [UOC].</em
+                  >The Huntsman Mental Health Institute site will remain
+                  unchanged. The site abbreviation, however, will be changed to
+                  [HMH].</em
                 >
-              </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-mor">
+            <h2 class="accordion-header" id="heading-mor">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-mor"
+                aria-expanded="false"
+                aria-controls="collapse-mor"
+              >
+                John A. Moran Eye Center
+              </button>
+            </h2>
+            <div
+              id="collapse-mor"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-mor"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <em
+                  >The John A. Moran Eye Center site will remain unchanged. The
+                  site abbreviation, however, will be changed to [MOR].</em
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-nrhip">
+            <h2 class="accordion-header" id="heading-nrhip">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-nrhip"
+                aria-expanded="false"
+                aria-controls="collapse-nrhip"
+              >
+                NRH Inpatient Rehab
+              </button>
+            </h2>
+            <div
+              id="collapse-nrhip"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-nrhip"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <em
+                  >The NRH Inpatient Rehab site will remain unchanged. The site
+                  abbreviation, however, will be changed to [NRHIP].</em
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-ucc">
+            <h2 class="accordion-header" id="heading-ucc">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-ucc"
+                aria-expanded="false"
+                aria-controls="collapse-ucc"
+              >
+                University Community Clinics
+              </button>
+            </h2>
+            <div
+              id="collapse-ucc"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-ucc"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  <em
+                    >These sites will be consolidated under the new University
+                    Community Clinics site. The site abbreviation will be
+                    [UCC].</em
+                  >
+                </p>
+                <ul>
+                  <li>Assessment & Referral Svcs</li>
+                  <li>Centerville Clinic (UUHC)</li>
+                  <li>Elko Specialty Clinic (UUHC)</li>
+                  <li>Farmington Health Ctr (UUHC)</li>
+                  <li>Greenwood Clinic (UUHC)</li>
+                  <li>Huntsman Clinic at South Jordan Health Center</li>
+                  <li>Madsen Clinic (UUHC)</li>
+                  <li>Farmington Health Ctr (UUHC)</li>
+                  <li>Pain Management Center</li>
+                  <li>Parkway Clinic (Orem-UUHC)</li>
+                  <li>Redstone Clinic (Park City / UUHC)</li>
+                  <li>Redwood Clinic (UUHC)</li>
+                  <li>RMCOEH (UUHC)</li>
+                  <li>South Jordan / Daybreak (UUHC)</li>
+                  <li>St. George Dental Clinic (UUHC)</li>
+                  <li>Stansbury Clinic (Tooele / UUHC)</li>
+                  <li>Sugar House Health Center (UUHC)</li>
+                  <li>Sugarhouse Clinic (UUHC)</li>
+                  <li>
+                    The Population Health Center / Rose Park Dental (UUHC)
+                  </li>
+                  <li>University of Utah School of Dentistry</li>
+                  <li>UofU Dept of Biomedical Informatics</li>
+                  <li>UofU Sleep-Wake Center (UUHC)</li>
+                  <li>Westridge Clinic (UUHC)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-uuh">
+            <h2 class="accordion-header" id="heading-uuh">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-uuh"
+                aria-expanded="false"
+                aria-controls="collapse-uuh"
+              >
+                University of Utah Hospital
+              </button>
+            </h2>
+            <div
+              id="collapse-uuh"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-uuh"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  <em
+                    >These sites will be consolidated under the University of
+                    Utah Hospitals and Clinics site, which will be renamed
+                    University of Utah Hospital. The site abbreviation will be
+                    [UUH].</em
+                  >
+                </p>
+                <ul>
+                  <li>Clinical Neurosciences Center (CNC)</li>
+                  <li>University of Utah Hospitals & Clinics</li>
+                  <li>Utah AirMed (UUHC)</li>
+                  <li>Utah Diabetes Center (UUHC)</li>
+                  <li>UUH - Imaging & Neurosciences Center</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-uuhlab">
+            <h2 class="accordion-header" id="heading-uuhlab">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-uuhlab"
+                aria-expanded="false"
+                aria-controls="collapse-uuhlab"
+              >
+                UUHC - Laboratory Research
+              </button>
+            </h2>
+            <div
+              id="collapse-uuhlab"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-uuhlab"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <em
+                  >The UUHC - Laboratory Research site will remain unchanged.
+                  The site abbreviation, however, will be changed to [UUHLab].
+                </em>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-hmhip">
+            <h2 class="accordion-header" id="heading-hmhip">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-hmhip"
+                aria-expanded="false"
+                aria-controls="collapse-hmhip"
+              >
+                UUHC Inpatient Psych - 5 West
+              </button>
+            </h2>
+            <div
+              id="collapse-hmhip"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-hmhip"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <em
+                  >The UUHC Inpatient Psych - 5 West site will remain unchanged.
+                  The site abbreviation, however, will be changed to
+                  [HMHIP].</em
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="item-uoc">
+            <h2 class="accordion-header" id="heading-uoc">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-uoc"
+                aria-expanded="false"
+                aria-controls="collapse-uoc"
+              >
+                University Orthopaedic Center
+              </button>
+            </h2>
+            <div
+              id="collapse-uoc"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-uoc"
+              data-bs-parent="#siteAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  <em
+                    >The University Orthopaedic Center site will remain
+                    unchanged. The University Orthopaedic Center site
+                    abbreviation will remain as [UOC].</em
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
